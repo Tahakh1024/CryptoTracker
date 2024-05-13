@@ -18,7 +18,7 @@ This project is a Cryptocurrency Tracker that fetches real-time prices of specif
    
 2. **Set Up Google Sheets API**: Due to security concerns, Google Sheets API credentials (JSON key file) are not included in this repository. You can obtain and configure your own credentials following the instructions provided by Google.
    
-3. **Run the Script**: Execute the `crypto_price_tracker.py` script to start fetching and logging cryptocurrency prices to the specified Google Sheets document.
+3. **Run the Script**: Execute the `MainScript.py` script to start fetching and logging cryptocurrency prices to the specified Google Sheets document.
    
 4. **Access the Google Sheets Document**: View the logged cryptocurrency price data in the [Google Sheets document](https://docs.google.com/spreadsheets/d/12UUhjGHx5SqHVxwsSu7txmW8TnqDLHP8d5ES9uqNdfI/).
 
