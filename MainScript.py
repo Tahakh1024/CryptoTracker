@@ -18,7 +18,7 @@ sheet = client.open('Crypto').sheet1
 def get_crypto_prices():
     url = 'https://api.coingecko.com/api/v3/simple/price'
     params = {
-        'ids': 'bitcoin,ethereum,ripple,litecoin,bitcoin-cash', 
+        'ids': 'bitcoin,ethereum,binancecoin,Solana,bitcoin-cash', 
         'vs_currencies': 'usd'
     }
     try:
@@ -52,3 +52,7 @@ schedule.every(1).minutes.do(update_google_sheets)
 while True:
     schedule.run_pending()
     time.sleep(1)
+
+# To manually trigger the data update, call the function update_google_sheets().
+# Following line can be uncommented to run the function once when the script starts.
+# update_google_sheets()
